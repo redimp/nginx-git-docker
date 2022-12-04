@@ -15,7 +15,7 @@ COPY supervisord.conf /etc/supervisor/conf.d/
 COPY stop-supervisor.sh /etc/supervisor/
 COPY default.conf /etc/nginx/conf.d/default.conf
 
-RUN chown -R www-data:www-data /git && \
+RUN chown -R www-data:www-data /repositories && \
     chmod 0755 /etc/supervisor/stop-supervisor.sh
 
 # # configure the entrypoint

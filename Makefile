@@ -6,4 +6,4 @@ build:
 	docker build -t nginx-git .
 
 run: build
-	docker run -p ${PORT}:80 -v ${PWD}/git:/git nginx-git
+	docker run -p ${PORT}:80 -v ${PWD}/repositories:/repositories nginx-git
